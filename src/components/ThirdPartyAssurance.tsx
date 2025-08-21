@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Target, Zap, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ThirdPartyAssurance = () => {
   const features = [
@@ -83,12 +84,14 @@ const ThirdPartyAssurance = () => {
             </div>
 
             <div className="mt-8">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
-              >
-                Get in Touch
-              </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+                >
+                  Get in Touch
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

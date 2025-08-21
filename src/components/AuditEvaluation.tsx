@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, FileCheck, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AuditEvaluation = () => {
   const benefits = [
@@ -44,12 +45,14 @@ const AuditEvaluation = () => {
               auditing & accounting complexities. Contact us today and see how we can help you.
             </p>
 
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              Get in Touch
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                Get in Touch
+              </Button>
+            </Link>
           </div>
 
           {/* Benefits Grid */}

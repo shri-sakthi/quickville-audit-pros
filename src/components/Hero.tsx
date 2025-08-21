@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-auditing.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -49,19 +50,23 @@ const Hero = () => {
           </div>
 
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              Learn More
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              Get Consultation
-            </Button>
+            <Link to="/about">
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                Learn More
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-3 text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
+                Get Consultation
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
